@@ -1,4 +1,6 @@
 // CHALLENGE 1
+/* Create a function createFunction that creates and returns a function. When that created function is called, it should print "hello".
+When you think you completed createFunction, un-comment out those lines in the code and run it to see if it works. */
 function createFunction() {
     return () => console.log('hello');
 }
@@ -9,6 +11,8 @@ function1(); // => should console.log('hello');
 
 
 // CHALLENGE 2
+/* Create a function createFunctionPrinter that accepts one input and returns a function. When that created function
+is called, it should print out the input that was used when the function was created. */
 function createFunctionPrinter(input) {
     return () => console.log(input);
 }
@@ -21,6 +25,10 @@ printHello(); // => should console.log('hello');
 
 
 // CHALLENGE 3
+/* Examine the code for the outer function. Notice that we are returning a function and
+that function is using variables that are outside of its scope.
+Uncomment those lines of code. Try to deduce the output before executing.
+Now we are going to create a function addByX that returns a function that will add an input by x. */
 function outer() {
   let counter = 0; // this variable is outside incrementCounter's scope
   function incrementCounter () {
