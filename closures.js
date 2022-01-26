@@ -10,14 +10,14 @@ function1(); // => should console.log('hello');
 
 // CHALLENGE 2
 function createFunctionPrinter(input) {
-
+    return () => console.log(input);
 }
 
 // /*** Uncomment these to check your work! ***/
-// const printSample = createFunctionPrinter('sample');
-// printSample(); // => should console.log('sample');
-// const printHello = createFunctionPrinter('hello');
-// printHello(); // => should console.log('hello');
+const printSample = createFunctionPrinter('sample');
+printSample(); // => should console.log('sample');
+const printHello = createFunctionPrinter('hello');
+printHello(); // => should console.log('hello');
 
 
 // CHALLENGE 3
