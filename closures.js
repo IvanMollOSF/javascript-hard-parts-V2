@@ -1,11 +1,11 @@
 // CHALLENGE 1
 function createFunction() {
-
+    return () => console.log('hello');
 }
 
 // /*** Uncomment these to check your work! ***/
-// const function1 = createFunction();
-// function1(); // => should console.log('hello');
+const function1 = createFunction();
+function1(); // => should console.log('hello');
 
 
 // CHALLENGE 2
